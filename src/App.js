@@ -3,7 +3,6 @@ import Menu from './components/MenuComponent'
 import './App.css';
 import { DISHES } from './shared/dishes'
 import { Component } from 'react';
-import { render } from '@testing-library/react';
 
 class App extends Component {
   constructor(props) {
