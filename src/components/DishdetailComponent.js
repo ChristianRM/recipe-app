@@ -28,7 +28,9 @@ class DishDetail extends Component {
                             <CardTitle>{obj.author}</CardTitle>
                             <CardSubtitle>{obj.rating} star rating</CardSubtitle>
                             <CardText>{obj.comment}</CardText>
-                            <CardSubtitle>{obj.date}</CardSubtitle>
+                            <CardSubtitle>
+                                {new Intl.DateTimeFormat('en-US', { year: 'numeric', month: 'short', day: '2-digit'}).format(new Date(Date.parse(obj.date)))}
+                            </CardSubtitle>
                         </CardBody>
                     </div>
                 )
